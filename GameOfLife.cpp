@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <cstring>
 #include "GameOfLife.h"
+#include <stdlib.h>
+#include <windows.h>
 void fillField(gameField &game_field){
     for(int i = 0; i<f_height; i++){
         for(int j = 0; j<f_width; j++){
@@ -10,6 +12,7 @@ void fillField(gameField &game_field){
     }
 }
 void drawField(gameField game_field){
+    system("cls");
     for(int i=0; i<f_height; i++){
         for(int j=0;j<f_width; j++){
             switch(game_field[i][j]){
@@ -19,7 +22,8 @@ void drawField(gameField game_field){
         }
         std::cout << std::endl;
     }
-    std::cout<<"--------------------"<<std::endl;
+    Sleep(200);
+//    std::cout<<"--------------------"<<std::endl;
 }
 void updateCell(gameField &game_field, short x, short y, unsigned short status){
     game_field[x][y] = status;

@@ -9,31 +9,8 @@ int main(){
     updateCell(game_field, 11, 13, 1);
     updateCell(game_field, 12, 12, 1);
     drawField(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
-    generation(game_field);
+    for(int i=0; i<20; i++){
+            generation(game_field);
+    }
     return 0;
 }
