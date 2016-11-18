@@ -27,3 +27,11 @@
 *.exe
 *.out
 *.app
+
+#codeblocks shit
+bin/
+doxygen/
+*.cbp
+*.depend
+*.layout
+obj/
